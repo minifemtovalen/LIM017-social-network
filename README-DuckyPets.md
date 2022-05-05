@@ -37,12 +37,8 @@ Primera historia de usuario
 Segunda historia de usuario
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 #### Diseño en alta fidelidad
-El prototipo de alta fidelidad lo podemos encontrar [aquí](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-### 4. Pruebas Unitarias
-#### Mocks- 01HU-Archivos: Auth.js Register.js Login.js
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-#### Mocks - 02HU-Archivos: _______ _______ ________
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+El prototipo de alta fidelidad lo podemos encontrar [aquí](https://www.figma.com/proto/qr1XrXHtIuXij8lrS1Vesk/Ducky-Pets?node-id=4%3A6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A6)
+
 ### Authors
 - [@NayTrevejo](https://github.com/Sharksumi/LIM017-social-network.git)
 - [@Valentina Patti.](https://github.com/minifemtovalen/LIM017-social-network.git)
