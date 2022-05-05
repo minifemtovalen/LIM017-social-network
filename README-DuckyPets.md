@@ -35,8 +35,10 @@ Desarrollamos nuestras historias de usuario, haciendo uso de la herramienta Trel
 #### Diseño en baja fidelidad
 Primera historia de usuario
 ![Img](https://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/prototipo.png)
+
 Segunda historia de usuario
-![Img](hhttps://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/prototipo%202.png)
+
+![Img](https://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/prototipo%202.png)
 #### Diseño en alta fidelidad
 El prototipo de alta fidelidad lo podemos encontrar [aquí](https://www.figma.com/proto/qr1XrXHtIuXij8lrS1Vesk/Ducky-Pets?node-id=4%3A6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A6)
 
