@@ -29,13 +29,14 @@ Desarrollamos nuestras historias de usuario, haciendo uso de la herramienta Trel
 #### HU02 - Usuario NO registrado-Login con Email and Password
 ![Historia de usuario 02](./src/imagenes/hu02.png)
 #### HU03 - Estructuración de Home
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-### 3. Diseño de la Interfaz de Usuario
+![Historia de usuario 03](https://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/HU3.png)
+### HU04. Diseño de la Interfaz de Usuario
+![Historia de usuario 04](https://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/HU4.png)
 #### Diseño en baja fidelidad
 Primera historia de usuario
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Img](https://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/prototipo.png)
 Segunda historia de usuario
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Img](hhttps://github.com/Sharksumi/LIM017-social-network/blob/main/src/imagenes/prototipo%202.png)
 #### Diseño en alta fidelidad
 El prototipo de alta fidelidad lo podemos encontrar [aquí](https://www.figma.com/proto/qr1XrXHtIuXij8lrS1Vesk/Ducky-Pets?node-id=4%3A6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A6)
 
