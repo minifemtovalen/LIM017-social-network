@@ -7,6 +7,7 @@ import {
   getSinglePost,
   updatePost,
 } from '../Firebase/firestore.js';
+import { firestore } from '../Firebase/init.js';
 
 export const Feed = () => {
   const userId = sessionStorage.getItem('uid');
@@ -18,6 +19,7 @@ export const Feed = () => {
 
   const feedWrapper = document.createElement('div');
   feedWrapper.id = 'feed-wrapper';
+
   const templateFeed = `
   <section id="feed" class= "contenedor-section">
   <img id="feed-logo" class="logo-feed" src="imagenes/logo.png">
@@ -28,9 +30,10 @@ export const Feed = () => {
   <div class= "formContainer">
   <form id = "formNewPost" class = "hide formContainer">
     <input type = "text" id ="newPostTitle" class = "newPostTitle" placeholder = "Coloca el título de tu publicación" value= "">
-    <input type = "text" id ="newPostBody" class="newPostBody" placeholder = "Escribe aquí tu publicación" value="">
+    <input type = "textarea" id ="newPostBody" class="newPostBody" placeholder = "Escribe aquí tu publicación" value="">
     <button type = "submit" id = "publishBtn" value="Publish" class="submit-buttons"> Publicar </button>
-  </form>
+    <button id= "closeForm">Cerrar</button>
+    </form>
   </div>
   <div id='feedPost1'></div>
   `;
@@ -38,19 +41,26 @@ export const Feed = () => {
 
   const formNewPost = feedWrapper.querySelector('#formNewPost');
   const postNew = feedWrapper.querySelector('.submit-buttons');
-
-
+  const closeForm = feedWrapper.querySelector('#closeForm');
   postNew.addEventListener('click', () => {
     formNewPost.classList.remove('hide');
   });
 
+  closeForm.addEventListener('click', (e) => {
+    e.preventDefault();
+    formNewPost.classList.add('hide');
+  });
+
   // Cuadros de texto rellenables
-  const newPostTitle = feedWrapper.querySelector('#new-post-title');
-  const newPostBody = feedWrapper.querySelector('#new-post-body');
+  const newPostTitle = feedWrapper.querySelector('#newPostTitle');
+  const newPostBody = feedWrapper.querySelector('#newPostBody');
+
   // variable que me indica el estado de edición
+
   let editStatus = false;
   let id = '';
-  const feedPostWrapper = feedWrapper.querySelector('#feed-post1');
+  const feedPostWrapper = feedWrapper.querySelector('#feedPost1');
+
   onGetPostInRealTime((querySnapShot) => {
     let cleaner = '';
     querySnapShot.forEach((doc) => {
@@ -59,9 +69,8 @@ export const Feed = () => {
       // comprobar el usuario de la sesion con el que hizo el post con operador ternario
 
       const edit = (userId === post.userId) ? `
-      <button id="btn-deleted" class="btn-deleted-class" data-id="${doc.id}">Deleted<i class="fa-solid fa-trash-can fa-trash-class"></i></button>
-      <button id="btn-edit" class="btn-edit-class" data-id="${doc.id}">Edit<i class="fa-solid fa-pen"></i></button>` : '';
-
+      <button id="btn-deleted" class="btn-deleted-class" data-id="${doc.id}">Borrar<i class="fa-solid fa-trash-can fa-trash-class"></i></button>
+      <button id="btn-edit" class="btn-edit-class" data-id="${doc.id}">Editar<i class="fa-solid fa-pen"></i></button>` : '';
 
       cleaner += `
 
@@ -78,9 +87,11 @@ export const Feed = () => {
       </section>
     `;
     });
+
     feedPostWrapper.innerHTML = cleaner;
 
     // Modal deleted
+
     const btnsDeletePost = feedPostWrapper.querySelectorAll('.btn-deleted-class');
     btnsDeletePost.forEach((btn) => {
       btn.addEventListener('click', (event) => {

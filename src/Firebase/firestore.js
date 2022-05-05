@@ -15,13 +15,6 @@ const auth = getAuth(app);
 export const firestore = getFirestore(app); // esto es db
 // usuarios
 
-export const storeUsers = (email) => {
-  addDoc(collection(firestore, 'users'), {
-    email,
-  }).then((test) => {
-    // console.log(`usuario creado. id : ${test.id}`);
-  });
-};
 export const store = (data, collectionName) => {
   addDoc(collection(firestore, collectionName), data).then((test) => {
     console.log(`registro creado. id : ${test.id}`);
