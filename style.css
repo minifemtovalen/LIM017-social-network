@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "comfortaa";
+  font-size: large;
+}
+
+body {
+  background: linear-gradient(90deg, #b5e5ff 0%, #ffdfb5 100%);
+  position: relative;
+  padding-bottom: 2em;
+  min-height: 90vh;
+  padding-top: 4rem;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+  color: #6e6d6c;
+  bottom: 0;
+  width: 100%;
+}
+
+/* --------LandingPage.js----------- */
+
+#landing-div-global {
+  display: grid;
+}
+
+#landing-logo {
+  /*grid-area: logo;*/
+  display: flex;
+  margin: 5% auto;
+  width: 70%;
+}
+
+/* Las clases de logo e img-bienvenida seran usados en Landing, login y register */
+.back-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.go-back-icon {
+  font-size: 38px;
+  color: rgb(80 135 139 / 35%);
+}
+
+.logo {
+  /*grid-area: logo;*/
+  display: flex;
+  margin: 0% auto;
+  width: 60%;
+}
+
+.img-bienvenida {
+  /*grid-area: img1;*/
+  width: 90%;
+  margin: 10% auto;
+}
+
+.btn-container {
+  /*grid-area: cont-landing;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btns-landing {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  font-size: x-large;
+  font-weight: bold;
+  color: #225a7a;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#btn-register,
+#btn-login {
+  height: 60px;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.btn-container button:first-child:hover {
+  background: rgba(247, 161, 47, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.btn-container button:first-child:focus {
+  background: rgba(247, 161, 47, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.btn-container button:nth-child(2):hover {
+  background: rgba(91, 147, 179, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+/* --------- Login.js ---------------*/
+#login-img {
+  width: 333px;
+  height: auto;
+}
+
+#register-h2,
+#login-h2,
+#recovery-h2 {
+  padding-top: 10px;
+  font-size: 30px;
+  color: #225a7a;
+}
+
+#form-register,
+#form-login,
+#form-reset {
+  display: grid;
+  gap: 13px;
+  align-items: center;
+  justify-items: center;
+}
+
+#register-email,
+#mail-input,
+#recovery-pass-input {
+  width: 287px;
+  height: 37px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-style: italic;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.password-container {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  width: 287px;
+  height: 37px;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.password-container > input {
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  font-style: italic;
+}
+
+#eye-container {
+  padding-left: 2em;
+  padding-top: 0.1em;
+}
+
+#show-password,
+#hide-password {
+  color: #a1a1a1;
+}
+
+.submit-buttons {
+  width: 181px;
+  height: 48px;
+  border-radius: 16px;
+  font-size: 18px;
+  border: 1.5px solid #b5e5ff;
+  margin-top: 0.5em;
+  color: #225a7a;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgb(34 90 122 / 70%);
+}
+
+#line-container,
+#line-container1 {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 70%;
+  align-items: center;
+}
+
+.solid-line {
+  height: 1px;
+  background: #d9c3a7;
+}
+
+#line-p,
+#line-p1 {
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #d9c3a7;
+}
+
+#register-btn-container,
+#login-btn-container {
+  padding-top: 0.5em;
+}
+
+.view-wrappers {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#recovery-wrapper {
+  text-align: center;
+}
+
+#register-img {
+  width: 333px;
+  height: auto;
+  padding-top: 1em;
+}
+
+#reset-pass-img {
+  width: 300px;
+  padding-top: 2em;
+}
+
+#recovery-h4 {
+  font-size: 16px;
+  color: #f7a12f;
+}
+
+.button-gmail {
+  width: 300px;
+  height: 56px;
+  border-radius: 16px;
+  font-size: 20px;
+  color: #225a7a;
+  font-weight: bold;
+  border: 1.5px solid #b5e5ff;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgb(34 90 122 / 70%);
+}
+
+#container,
+#container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#a-reset-password {
+  color: #0c9ea7;
+  font-size: 18px;
+  padding-top: 19px;
+}
+
+#p-no-account,
+#p-yes-account {
+  padding-top: 54px;
+  font-size: 17px;
+  color: #225a7a;
+}
+
+#better-login,
+#no-acc-register {
+  font-size: 17px;
+  color: #f7a12f;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* ---- Feed ---- */
+
+#feed-wrapper {
+  grid-template-areas:
+    "logo"
+    "new-post"
+    "form"
+    "div-post";
+}
+
+.logo-feed {
+  display: flex;
+  flex-direction: column;
+  grid-area: logo;
+  align-items: center;
+  width: 40%;
+}
+
+.contenedor-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#create-new-post {
+  grid-area: new-post;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#createNewPost p {
+  font-weight: bold;
+}
+#btnNewPost {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  width: 310px;
+  align-items: center;
+}
+
+#btnNewPost p {
+  color: #225a7a;
+}
+
+#btnNewPost:hover {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#btnNewPost i {
+  font-size: 40px;
+}
+
+#publishBtn {
+  width: 181px;
+  height: 48px;
+  border-radius: 16px;
+  font-size: 18px;
+  border: 1.5px;
+  color: #fff;
+  margin-top: 0.5em;
+  background-color: rgba(91, 147, 179, 0.7);
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgb(34 90 122 / 70%);
+}
+
+#closeForm {
+  width: 181px;
+  height: 40px;
+  border-radius: 16px;
+  font-size: 18px;
+  border: 1.5px;
+  color: #225a7a;
+  margin-top: 0.5em;
+  background-color: rgba(247, 161, 47, 0.7);
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgb(34 90 122 / 70%);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#publish-btn {
+  width: 100%;
+}
+
+#newPostTitle {
+  font-weight: bold;
+  height: 40px;
+  width: 350px;
+  text-align: center;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-style: italic;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+#newPostBody {
+  height: 70px;
+  width: 350px;
+  font-weight: lighter;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+#feedPost1 {
+  grid-area: div-post;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/*Contenedores del post*/
+
+.post-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border: 5px solid #5b94b2;
+  box-sizing: border-box;
+  border-radius: 15px;
+  flex-direction: column;
+  min-width: 460px;
+  gap: 15px;
+}
+
+#post-title {
+  font-weight: bold;
+  padding-left: 7px;
+  font-size: x-large;
+}
+
+#post-body {
+  background: rgba(255, 255, 255, 0.7);
+  min-height: 50px;
+  text-align: justify;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 3px solid #b6e5ff;
+}
+
+.postInteraction {
+  display: grid;
+
+  flex-direction: row;
+  padding: 0 0 5px 5px;
+  grid-template: "dele edit corazon";
+}
+
+#btn-deleted {
+  width: 100px;
+  margin: 10px;
+}
+.btn-deleted-class {
+  border: none;
+  background: fixed;
+  grid-area: dele;
+  display: grid;
+  grid-template-areas: "del tacho";
+  background-color: rgba(247, 161, 47, 0.7);
+  border-radius: 25%;
+  cursor: pointer;
+}
+#btn-edit {
+  width: 100px;
+  margin: 10px;
+}
+.btn-edit-class {
+  border: none;
+  background: fixed;
+  grid-area: edit;
+  display: grid;
+  grid-template-areas: "del pen";
+  background-color: #b6e5ff;
+  border-radius: 25%;
+  cursor: pointer;
+}
+.fa-trash-class {
+  grid-area: tacho;
+}
+
+/* -------Media Querys------ */
+
+/*--Landing --*/
+@media screen and (min-width: 768px) {
+  #landing-div-global {
+    grid-template-areas:
+      "img-welcome-desktop logo-desktop"
+      "img-welcome-desktop container-desktop"
+      "img-welcome-desktop ."
+      " . .";
+  }
+  .img-bienvenida {
+    grid-area: img-welcome-desktop;
+    align-self: center;
+    display: flex;
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  #landing-logo {
+    grid-area: logo-desktop;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 50px 118px;
+  }
+}
+
+.hide {
+  display: none;
+}
